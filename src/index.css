@@ -99,3 +99,47 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .ripple {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripple-effect 0.8s linear;
+    background: rgba(0, 102, 177, 0.4); /* BMW blue with opacity */
+    z-index: 9999;
+  }
+
+  .mouse-trail {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #0066B1;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    animation: trail-fade 0.5s linear;
+  }
+
+  @keyframes ripple-effect {
+    0% {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  @keyframes trail-fade {
+    0% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+}

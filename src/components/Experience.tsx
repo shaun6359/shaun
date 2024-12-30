@@ -13,6 +13,18 @@ const experiences = [
       "Developed datasets from S&P 500 using Signal Processing Algorithms",
     ],
   },
+  {
+    title: "Business Founder - Mobile Car Detailing",
+    company: "S&P Detailing",
+    location: "Whitby, ON",
+    period: "06/2023 - 09/2024",
+    description: [
+      "Founded and scaled a profitable mobile car detailing business, achieving consistent 5-figure monthly revenue",
+      "Oversaw all business operations, including financial planning and resource allocation, ensuring growth and profitability",
+      "Led a team of employees, fostering a collaborative environment to deliver high-quality services and ensure customer satisfaction, resulting in a strong client retention rate",
+      "Led marketing strategies, using data analytics to boost efficiency and repeat business",
+    ],
+  },
 ];
 
 const Experience = () => {
