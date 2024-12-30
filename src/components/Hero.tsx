@@ -43,7 +43,7 @@ const Hero = () => {
         >
           <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-bmw-blue">
             <img
-              src="/placeholder.svg"
+              src="/SHAUN_GR12_GRADUATION.jpg"
               alt="Shaun Arulanandam"
               className="w-full h-full object-cover"
             />
