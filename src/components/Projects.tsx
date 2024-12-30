@@ -2,6 +2,39 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "MediScan Pro",
+    description: "AI-driven system using ResNet-50 for X-ray classification of pneumonia with automated medical report generation.",
+    tech: ["Python", "Flask", "ResNet-50", "HTML/CSS/JavaScript"],
+    highlights: [
+      "80% accuracy on test data",
+      "Secure user login system",
+      "Real-time diagnostic feedback",
+      "PDF report generation",
+    ],
+  },
+  {
+    title: "Sentivest AI Trading Bot",
+    description: "Algorithmic Trading Bot using Python, Alpaca API, and sentiment analysis for automated trading decisions.",
+    tech: ["Python", "Alpaca API", "FinBERT", "Machine Learning"],
+    highlights: [
+      "99.9% confidence thresholds",
+      "Automated bracket orders",
+      "Sentiment-driven decisions",
+      "Profitable backtesting results",
+    ],
+  },
+  {
+    title: "Investors Centre",
+    description: "Responsive web application for stock price prediction and financial insights.",
+    tech: ["Python", "Flask", "React JS", "Tailwind CSS", "LSTM"],
+    highlights: [
+      "80% LSTM prediction accuracy",
+      "Interactive finance chatbot",
+      "Real-time financial data",
+      "GPT-3.5 integration",
+    ],
+  },
+  {
     title: "Classify",
     description: "A startup focused on revolutionizing note-taking for STEM students. Classify automatically captures and rewrites board content in the user's handwriting, featuring powerful search functionality, auto-solving for math equations, and AI-powered summaries.",
     tech: ["React", "Python", "Machine Learning", "OCR"],

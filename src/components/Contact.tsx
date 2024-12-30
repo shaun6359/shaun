@@ -35,7 +35,7 @@ const Contact = () => {
               <span>(647) - 922 - 1412</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://ca.linkedin.com/in/shaun-arulanandam-85a43b266"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 text-slate hover:text-bmw-blue transition-colors"
