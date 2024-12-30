@@ -2,6 +2,28 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Classify",
+    description: "A startup focused on revolutionizing note-taking for STEM students. Classify automatically captures and rewrites board content in the user's handwriting, featuring powerful search functionality, auto-solving for math equations, and AI-powered summaries.",
+    tech: ["React", "Python", "Machine Learning", "OCR"],
+    highlights: [
+      "Automatic board content capture",
+      "Handwriting replication",
+      "AI-powered summaries",
+      "Math equation solver",
+    ],
+  },
+  {
+    title: "GamerGram",
+    description: "Social media platform specialized for Gaming enthusiasts (In Development).",
+    tech: ["React", "Node.js", "MongoDB"],
+    highlights: [
+      "Gaming-focused features",
+      "Social connectivity",
+      "User engagement tools",
+      "Community building",
+    ],
+  },
+  {
     title: "MediScan Pro",
     description: "AI-driven system using ResNet-50 for X-ray classification of pneumonia with automated medical report generation.",
     tech: ["Python", "Flask", "ResNet-50", "HTML/CSS/JavaScript"],
@@ -35,17 +57,6 @@ const projects = [
     ],
   },
   {
-    title: "Classify",
-    description: "A startup focused on revolutionizing note-taking for STEM students. Classify automatically captures and rewrites board content in the user's handwriting, featuring powerful search functionality, auto-solving for math equations, and AI-powered summaries.",
-    tech: ["React", "Python", "Machine Learning", "OCR"],
-    highlights: [
-      "Automatic board content capture",
-      "Handwriting replication",
-      "AI-powered summaries",
-      "Math equation solver",
-    ],
-  },
-  {
     title: "3D Automated Plant Watering System",
     description: "Custom 3D-printed vase system for UofT Engineering Science plant mascot.",
     tech: ["Fusion 360", "Arduino", "Raspberry Pi", "3D Printing"],
@@ -54,17 +65,6 @@ const projects = [
       "Custom 3D-printed design",
       "Automated misting system",
       "Plant-specific programming",
-    ],
-  },
-  {
-    title: "Zootopia Multiplayer Game",
-    description: "Turn-based, two-player combat game with unique characters and strategic gameplay.",
-    tech: ["Java", "JavaFX", "OOP"],
-    highlights: [
-      "Randomized maps with bonuses",
-      "8 specialized characters",
-      "Collaborative development",
-      "Intuitive UI/UX design",
     ],
   },
   {
@@ -79,14 +79,14 @@ const projects = [
     ],
   },
   {
-    title: "GamerGram",
-    description: "Social media platform specialized for Gaming enthusiasts (In Development).",
-    tech: ["React", "Node.js", "MongoDB"],
+    title: "Zootopia Multiplayer Game",
+    description: "Turn-based, two-player combat game with unique characters and strategic gameplay.",
+    tech: ["Java", "JavaFX", "OOP"],
     highlights: [
-      "Gaming-focused features",
-      "Social connectivity",
-      "User engagement tools",
-      "Community building",
+      "Randomized maps with bonuses",
+      "8 specialized characters",
+      "Collaborative development",
+      "Intuitive UI/UX design",
     ],
   },
 ];
