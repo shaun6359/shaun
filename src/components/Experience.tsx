@@ -25,6 +25,16 @@ const experiences = [
       "Led marketing strategies, using data analytics to boost efficiency and repeat business",
     ],
   },
+  {
+    title: "Business Founder - Advanced Mathematics Tutor",
+    company: "Shaun's Tutoring",
+    location: "Whitby, ON",
+    period: "04/2023 - Present",
+    description: [
+      "Founded an independent tutoring company, achieving a 4-figure monthly revenue, specializing in advanced-level mathematics for higher level students",
+      "Provided extensive support, fostering a conductive learning environment and contributing to academic success",
+    ],
+  },
 ];
 
 const Experience = () => {
