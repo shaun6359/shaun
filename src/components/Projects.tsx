@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
@@ -11,6 +12,7 @@ const projects = [
       "AI-powered summaries",
       "Math equation solver",
     ],
+    status: "In Progress"
   },
   {
     title: "GamerGram",
@@ -22,6 +24,7 @@ const projects = [
       "User engagement tools",
       "Community building",
     ],
+    status: "In Progress"
   },
   {
     title: "MediScan Pro",
@@ -89,7 +92,10 @@ const projects = [
       "Intuitive UI/UX design",
     ],
   },
-];
+].map(project => ({
+  ...project,
+  status: project.status || "Completed"
+}));
 
 const Projects = () => {
   return (
@@ -112,9 +118,20 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-navy-light p-6 rounded-lg border border-slate-dark hover:border-bmw-blue transition-colors"
             >
-              <h3 className="text-xl font-bold text-bmw-blue mb-4">
-                {project.title}
-              </h3>
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-xl font-bold text-bmw-blue">
+                  {project.title}
+                </h3>
+                <Badge 
+                  className={`${
+                    project.status === "Completed" 
+                      ? "bg-green-500 hover:bg-green-600" 
+                      : "bg-purple-500 hover:bg-purple-600"
+                  } text-white`}
+                >
+                  {project.status}
+                </Badge>
+              </div>
               <p className="text-slate mb-4">{project.description}</p>
               <div className="mb-4">
                 <h4 className="text-slate-light font-bold mb-2">Tech Stack:</h4>
