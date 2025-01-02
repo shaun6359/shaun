@@ -14,10 +14,10 @@ const Contact = () => {
 
     try {
       const result = await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_73ewt2h',
+        'template_jfoivya',
         formRef.current!,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'movFSGbSbLIE8m1U6'
       );
 
       console.log('Email sent successfully:', result.text);
