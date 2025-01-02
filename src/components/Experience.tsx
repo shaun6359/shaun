@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
@@ -6,6 +7,7 @@ const experiences = [
     company: "AfterDark Creatives",
     location: "Toronto, ON",
     period: "12/2024 - Present",
+    badge: { text: "In Progress", color: "bg-[#9b87f5] hover:bg-[#9b87f5]/80" },
     description: [
       "Coming Soon...",
     ],
@@ -15,6 +17,7 @@ const experiences = [
     company: "King Mongkut's University of Technology Thonburi",
     location: "Bangkok, Thailand",
     period: "05/2024 - 08/2024",
+    badge: { text: "Completed", color: "bg-[#F2FCE2] hover:bg-[#F2FCE2]/80 text-green-800" },
     description: [
       "Researched Generative AI's ability to generate realistic, synthetic stock charts",
       "Developed and trained a custom TimeGAN model achieving 91% accuracy",
@@ -27,6 +30,7 @@ const experiences = [
     company: "S&P Detailing",
     location: "Whitby, ON",
     period: "06/2023 - 09/2024",
+    badge: { text: "Seasonal", color: "bg-[#FEC6A1] hover:bg-[#FEC6A1]/80 text-orange-800" },
     description: [
       "Founded and scaled a profitable mobile car detailing business, achieving consistent 5-figure monthly revenue",
       "Oversaw all business operations, including financial planning and resource allocation, ensuring growth and profitability",
@@ -39,6 +43,7 @@ const experiences = [
     company: "Shaun's Tutoring",
     location: "Whitby, ON",
     period: "04/2023 - Present",
+    badge: { text: "Active", color: "bg-[#FEC6A1] hover:bg-[#FEC6A1]/80 text-orange-800" },
     description: [
       "Founded an independent tutoring company, achieving a 4-figure monthly revenue, specializing in advanced-level mathematics for higher level students",
       "Provided extensive support, fostering a conductive learning environment and contributing to academic success",
@@ -67,9 +72,14 @@ const Experience = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-navy p-6 rounded-lg border border-slate-dark"
             >
-              <h3 className="text-xl font-bold text-bmw-blue mb-2">
-                {exp.title}
-              </h3>
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-xl font-bold text-bmw-blue">
+                  {exp.title}
+                </h3>
+                <Badge className={`ml-2 ${exp.badge.color}`}>
+                  {exp.badge.text}
+                </Badge>
+              </div>
               <p className="text-slate mb-4">
                 {exp.company} | {exp.location}
               </p>
