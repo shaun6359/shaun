@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Freelance Web Development Startup",
+    company: "AfterDark Creatives",
+    location: "Toronto, ON",
+    period: "Coming Soon...",
+    description: [
+      "Coming Soon...",
+    ],
+  },
+  {
     title: "Undergraduate Finance and ML Research",
     company: "King Mongkut's University of Technology Thonburi",
     location: "Bangkok, Thailand",
