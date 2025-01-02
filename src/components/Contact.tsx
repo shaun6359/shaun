@@ -84,21 +84,21 @@ const Contact = () => {
           >
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-slate mb-2">Name</label>
+                <label htmlFor="from_name" className="block text-slate mb-2">Name</label>
                 <input
                   type="text"
-                  name="name"
-                  id="name"
+                  name="from_name"
+                  id="from_name"
                   required
                   className="w-full px-4 py-2 rounded bg-navy border border-slate-dark text-slate focus:outline-none focus:border-bmw-blue"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-slate mb-2">Email</label>
+                <label htmlFor="from_email" className="block text-slate mb-2">Email</label>
                 <input
                   type="email"
-                  name="email"
-                  id="email"
+                  name="from_email"
+                  id="from_email"
                   required
                   className="w-full px-4 py-2 rounded bg-navy border border-slate-dark text-slate focus:outline-none focus:border-bmw-blue"
                 />
