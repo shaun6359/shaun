@@ -5,7 +5,7 @@ const experiences = [
     title: "Freelance Web Development Startup",
     company: "AfterDark Creatives",
     location: "Toronto, ON",
-    period: "Coming Soon...",
+    period: "12/2024 - Present",
     description: [
       "Coming Soon...",
     ],
