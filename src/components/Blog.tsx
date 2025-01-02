@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Blog = () => {
   return (
-    <section id="blog" className="py-20 bg-navy-light px-4">
+    <section id="about" className="py-20 bg-navy-light px-4">
       <div className="container mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -10,7 +10,7 @@ const Blog = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold text-slate-light mb-12 font-inter"
         >
-          Blog
+          About Me
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <motion.div

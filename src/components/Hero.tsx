@@ -41,7 +41,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="relative"
         >
-          <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-bmw-blue">
+          <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mx-auto rounded-full overflow-hidden border-4 border-bmw-blue">
             <img
               src="/SHAUN_GR12_GRADUATION.jpg"
               alt="Shaun Arulanandam"
