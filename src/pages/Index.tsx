@@ -5,7 +5,6 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
-import GlobeModel from "@/components/GlobeModel";
 
 const Index = () => {
   return (
@@ -13,7 +12,6 @@ const Index = () => {
       <Navigation />
       <Hero />
       <Blog />
-      <GlobeModel />
       <Experience />
       <Projects />
       <Skills />

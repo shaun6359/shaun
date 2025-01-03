@@ -36,7 +36,7 @@ const GlobeModel = () => {
     // Create globe
     const globeGeometry = new THREE.SphereGeometry(2, 32, 32);
     const globeMaterial = new THREE.MeshPhongMaterial({
-      color: 0x2B93E3, // Ocean blue
+      color: 0x0066B1, // BMW blue to match theme
       shininess: 90,
       transparent: true,
       opacity: 0.9,
@@ -69,16 +69,16 @@ const GlobeModel = () => {
     const animate = () => {
       requestAnimationFrame(animate);
 
-      // Reduced rotation speed from 0.005 to 0.001
-      globe.rotation.y += 0.001;
-      wireframe.rotation.y += 0.001;
+      // Constant rotation
+      globe.rotation.y += 0.005;
+      wireframe.rotation.y += 0.005;
 
-      // Reduced mouse interaction sensitivity
-      scene.rotation.y += (mouseX / 10 - scene.rotation.x) * 0.05;
-      scene.rotation.x += (mouseY / 10 - scene.rotation.y) * 0.05;
+      // Interactive rotation based on mouse
+      scene.rotation.y += (mouseX / 5 - scene.rotation.x) * 0.05;
+      scene.rotation.x += (mouseY / 5 - scene.rotation.y) * 0.05;
 
-      // Slower floating animation
-      scene.position.y = Math.sin(Date.now() * 0.0005) * 0.1;
+      // Floating animation
+      scene.position.y = Math.sin(Date.now() * 0.001) * 0.1;
 
       renderer.render(scene, camera);
     };
