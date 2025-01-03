@@ -36,7 +36,7 @@ const GlobeModel = () => {
     // Create globe
     const globeGeometry = new THREE.SphereGeometry(2, 32, 32);
     const globeMaterial = new THREE.MeshPhongMaterial({
-      color: 0x0066B1, // BMW blue to match theme
+      color: 0x2B93E3, // Ocean blue
       shininess: 90,
       transparent: true,
       opacity: 0.9,
