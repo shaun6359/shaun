@@ -69,16 +69,16 @@ const GlobeModel = () => {
     const animate = () => {
       requestAnimationFrame(animate);
 
-      // Constant rotation
-      globe.rotation.y += 0.005;
-      wireframe.rotation.y += 0.005;
+      // Reduced rotation speed from 0.005 to 0.001
+      globe.rotation.y += 0.001;
+      wireframe.rotation.y += 0.001;
 
-      // Interactive rotation based on mouse
-      scene.rotation.y += (mouseX / 5 - scene.rotation.x) * 0.05;
-      scene.rotation.x += (mouseY / 5 - scene.rotation.y) * 0.05;
+      // Reduced mouse interaction sensitivity
+      scene.rotation.y += (mouseX / 10 - scene.rotation.x) * 0.05;
+      scene.rotation.x += (mouseY / 10 - scene.rotation.y) * 0.05;
 
-      // Floating animation
-      scene.position.y = Math.sin(Date.now() * 0.001) * 0.1;
+      // Slower floating animation
+      scene.position.y = Math.sin(Date.now() * 0.0005) * 0.1;
 
       renderer.render(scene, camera);
     };
